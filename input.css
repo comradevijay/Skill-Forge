@@ -92,12 +92,12 @@ nav {
 .icon {
   display: inline;
   height: 1em;
-  filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(190deg) brightness(100%);
-  
+  filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(190deg)
+    brightness(100%);
 }
 
-.empower{
-  display: inline-flex; 
+.empower {
+  display: inline-flex;
   outline: #93bbf8 solid;
   align-items: center;
   padding: 0.3em 0.5em;
@@ -109,69 +109,132 @@ nav {
   color: #242f67;
 }
 
-.hero-h{
+.hero-h {
   font-size: 3em;
   font-weight: bold;
-  color: #091526;     /* #091526 navy*/  
+  color: #091526; /* #091526 navy*/
   margin-left: 1em;
   margin-top: 0.6em;
-
 }
-#special{
-  color: #0151e6;     /* #0151e6 blue */
+#special {
+  color: #0151e6; /* #0151e6 blue */
 }
 
-.hero-p, #btn{
+.hero-p,
+#btn {
   margin-left: 3em;
 }
 
-#btn{
+#btn {
   display: inline-flex;
   margin-top: 1.5em;
   gap: 2em;
-
 }
 
-.btn{
-  padding: 1em 1.5em;
+.btn {
+  padding: 1em 1.6em;
   color: #ffffff;
   border-radius: 1em;
   display: inline-flex;
   align-items: center;
-  gap: 0.5em;
-
 }
 
-#btn-fill{
+#btn-fill {
   background-color: #0151e6;
 }
 
-#btn-out{
+#btn-out {
   border: 1px #0151e6 solid;
   color: #0151e6;
 }
 
-.arrow{
+.arrow {
   display: inline;
   height: 3vh;
-
 }
-#btn-fill:hover{
+#btn-fill:hover {
   cursor: pointer;
   background-color: #3f73d3;
-
 }
 
-#btn-out:hover{
+#btn-out:hover {
   cursor: pointer;
   background-color: #b6cef3;
 }
 
+.sucess {
+  margin-left: 3em;
+  margin-top: 2em;
+  background-color: #ffff;
+  border-radius: 0.5em;
+  padding: 1em 0;
+  width: 40%;
+}
 
+.sucess div divspan {
+  padding: 2em;
+  align-items: center;
+}
 
+.sucess #num span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 0;
+  padding: 0 1.5em;
+  border-right: 1px solid #e5e7eb;
+}
 
+.sucess #num span:last-child {
+  border-right: none;
+}
 
+.sucess #num span span {
+  display: block;
+  padding: 0;
+  border-right: none;
+  gap: 0;
+}
 
+#num {
+  display: flex;
+  align-items: center;
+}
 
+#num span svg {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+#cap {
+  background-color: #e1ebfd;
+  fill: #004ddc;
+}
+
+#partners {
+  background-color: #ddf4e6;
+  fill: #27af55;
+}
+
+#star {
+  background-color: #fcf3db;
+  fill: #fcb601;
+}
+
+.stat-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: #888;
+  display: block;
+}
 
 
