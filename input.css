@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
+/* {
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   background-color: #ffffff;
   color: #555;
   font-family: Lato, sans-serif;
@@ -16,6 +16,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
+
 header {
   height: 9vh;
 }
@@ -31,6 +32,7 @@ nav {
   padding-bottom: 0;
   position: fixed;
   height: 9vh;
+  z-index: 9999;
 }
 
 .nav-left {
@@ -71,29 +73,126 @@ nav {
 }
 
 .nav-ul li a:hover {
-  background-color: #555;
+  background-color: #b6cef3;
 }
+
 
 .login a:hover {
   padding: 0.5em;
   background-color: #0d6efd;
 }
 
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #ffffff;
+  color: #555;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+header {
+  height: 9vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: fixed;
+  height: 9vh;
+  z-index: 9999;
+}
+
+.custom-nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-left: 7em;
+  color: #ffffff;
+  list-style: none;
+}
+
+.logo {
+  height: 3rem;
+  width: 7rem;
+}
+
+.nav-ul li a{
+  padding: 0.7em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  gap: 2em;
+  list-style: none;
+}
+
+.login a {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.nav-ul li a:hover, .login a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.05), 
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
 #hero {
-  background-image: url(img/hero-img.png);
   background-image: url(img/hero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 92vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
   display: inline;
   height: 1em;
-  filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(190deg)
-    brightness(100%);
+  filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(190deg) brightness(100%);
 }
 
 .empower {
@@ -112,16 +211,16 @@ nav {
 .hero-h {
   font-size: 3em;
   font-weight: bold;
-  color: #091526; /* #091526 navy*/
+  color: #091526;
   margin-left: 1em;
   margin-top: 0.6em;
 }
+
 #special {
-  color: #0151e6; /* #0151e6 blue */
+  color: #0151e6;
 }
 
-.hero-p,
-#btn {
+.hero-p, #btn {
   margin-left: 3em;
 }
 
@@ -152,6 +251,7 @@ nav {
   display: inline;
   height: 3vh;
 }
+
 #btn-fill:hover {
   cursor: pointer;
   background-color: #3f73d3;
@@ -162,17 +262,18 @@ nav {
   background-color: #b6cef3;
 }
 
+/* ── Stats bar ── */
 .sucess {
   margin-left: 3em;
   margin-top: 2em;
-  background-color: #ffff;
+  background-color: #fff;
   border-radius: 0.5em;
   padding: 1em 0;
-  width: 40%;
+  width: fit-content;
 }
 
-.sucess div divspan {
-  padding: 2em;
+#num {
+  display: flex;
   align-items: center;
 }
 
@@ -180,7 +281,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 0;
   padding: 0 1.5em;
   border-right: 1px solid #e5e7eb;
 }
@@ -196,9 +296,14 @@ nav {
   gap: 0;
 }
 
-#num {
+.sucess #num span span.stat-text {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sucess #num span:nth-child(2) .stat-label {
+  white-space: nowrap;
 }
 
 #num span svg {
@@ -207,22 +312,12 @@ nav {
   height: 2.5em;
   padding: 0.5em;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
-#cap {
-  background-color: #e1ebfd;
-  fill: #004ddc;
-}
-
-#partners {
-  background-color: #ddf4e6;
-  fill: #27af55;
-}
-
-#star {
-  background-color: #fcf3db;
-  fill: #fcb601;
-}
+#cap      { background-color: #e1ebfd; fill: #004ddc; }
+#partners { background-color: #ddf4e6; fill: #27af55; }
+#star     { background-color: #fcf3db; fill: #fcb601; }
 
 .stat-number {
   font-size: 1.1rem;
@@ -237,3 +332,126 @@ nav {
   display: block;
 }
 
+/* ── Hero right floating cards ── */
+.hero-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.float-card {
+  position: absolute;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: all;
+}
+
+/* Card positions */
+#card-video { top: 10%;    right: 45%; }
+#card-code  { top: 23%;   left: 16%;   }
+#card-hands { bottom:40%; left: 12%;  }
+#card-cert  { bottom: 38%; right: 2%; }
+
+/* Icon circles */
+.float-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.float-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-blue   { background: #dce8fb; }
+.icon-blue   svg path { fill: #0151e6; }
+
+.icon-green  { background: #d4f0e0; }
+.icon-green  svg path { fill: #22c55e; }
+
+.icon-purple { background: #ede9fe; }
+.icon-purple svg path { fill: #9333ea; }
+
+.float-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.float-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+}
+
+.float-underline {
+  margin-top: 5px;
+  width: 36px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Code card */
+.code-block {
+  background: #1e1e2e;
+  border-radius: 10px;
+  padding: 12px 16px;
+  min-width: 180px;
+}
+
+.code-dots {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red      { background: #ff5f57; }
+.dot.yellow   { background: #febc2e; }
+.dot.green-dot { background: #28c840; }
+
+.code-block pre {
+  margin: 0;
+  font-size: 0.72rem;
+  font-family: monospace;
+  color: #cdd6f4;
+  line-height: 1.6;
+}
+
+.fn { color: #cba6f7; }
+
+#card-code{
+  padding: 0;
+}
+
+
+#about{
+  background-image: url(img/about-img.png);
+  background-image: url(img/about.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 91vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
