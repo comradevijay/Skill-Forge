@@ -108,7 +108,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 1em 2.5em;
   width: 100%;
   margin-bottom: 0;
   padding-top: 0;
@@ -120,9 +120,7 @@ nav {
 
 .custom-nav {
   background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
 }
 
 .nav-left {
@@ -145,36 +143,33 @@ nav {
 }
 
 .nav-ul li a{
-  padding: 0.7em;
-  border-radius: 0.5em;
-  text-decoration: none;
-  color: inherit;
-}
-
-.login {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  gap: 2em;
-  list-style: none;
-}
-
-.login a {
   padding: 0.5em;
   border-radius: 0.5em;
   text-decoration: none;
   color: inherit;
+  border: 1px solid transparent;
 }
 
 
-.nav-ul li a:hover, .login a:hover {
+#login{
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: #ffffff;
+  background-color: #007bff;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+
+.nav-ul li a:hover, #login:hover {
   background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.05), 
-              inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+  
+}
+
+#login:hover {
+  background-color: #0157eb;
 }
 
 #hero {
@@ -192,7 +187,7 @@ nav {
 .icon {
   display: inline;
   height: 1em;
-  filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(190deg) brightness(100%);
+  fill: #3c5ec3;
 }
 
 .empower {
@@ -240,6 +235,7 @@ nav {
 
 #btn-fill {
   background-color: #0151e6;
+  border: 2px #0151e6 solid;
 }
 
 #btn-out {
@@ -249,8 +245,19 @@ nav {
 
 .arrow {
   display: inline;
-  height: 3vh;
+  height: 1.8vh;
+  margin-left: 0.5em;
+
 }
+
+#btn-fill svg{
+  fill: #ffffff;
+}
+
+#btn-out svg{
+  fill: #0151e6;
+}
+
 
 #btn-fill:hover {
   cursor: pointer;
@@ -445,7 +452,7 @@ nav {
 
 #about{
   background-image: url(img/about-img.png);
-  background-image: url(img/about.png);
+  /* background-image: url(img/about.png); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
