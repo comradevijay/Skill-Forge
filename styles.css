@@ -383,14 +383,9 @@ nav {
   height: 20px;
 }
 
-.icon-blue   { background: #dce8fb; }
-.icon-blue   svg path { fill: #0151e6; }
-
-.icon-green  { background: #d4f0e0; }
-.icon-green  svg path { fill: #22c55e; }
-
-.icon-purple { background: #ede9fe; }
-.icon-purple svg path { fill: #9333ea; }
+.icon-blue   { background: #dce8fb; fill: #0151e6; }
+.icon-green  { background: #d4f0e0; fill: #22c55e;}
+.icon-purple { background: #ede9fe; fill: #9333ea;}
 
 .float-text {
   display: flex;
@@ -451,7 +446,6 @@ nav {
 
 
 #about{
-  /* background-image: url(img/about-img.png); */
   background-image: url(img/about.png);
   background-size: cover;
   background-position: center;
@@ -491,17 +485,10 @@ nav {
 }
 
 
-.icon-mission { background: #0052fe; }
-.icon-mission svg path { fill: #fff; }
-
-.icon-qe { background: #17c67d; }
-.icon-qe svg path { fill: #fff; }
-
-.icon-community { background: #6431f6; }
-.icon-community svg path { fill: #fff; }
-
-.icon-vision { background: #0051ff; }
-.icon-vision svg path { fill: #fff; }
+.icon-mission { background: #0052fe; fill: #fff; }
+.icon-qe { background: #17c67d; fill: #fff; }
+.icon-community { background: #6431f6; fill: #fff; }
+.icon-vision { background: #0051ff; fill: #fff; }
 
 /* Card positions */
 #card-mission { top: 5%; left: 20%; right: 41%;}
@@ -516,10 +503,6 @@ nav {
   top: 0;
   width: 55%;
   height: 100%;
-
-  /* display: flex;
-  justify-content: center; 
-  align-items: center;      */
 
 }
 
@@ -537,14 +520,9 @@ nav {
   font-size: 80%;
 }
 
-.icon-demand { background: #0154f8; }
-.icon-demand svg path { fill: #fff; }
-
-.icon-learning { background: #17c47d; }
-.icon-learning svg path { fill: #fff; }
-
-.icon-achive { background: #6431f4; }
-.icon-achive svg path { fill: #fff; }
+.icon-demand { background: #0154f8; fill: #fff; }
+.icon-learning { background: #17c47d; fill: #fff; }
+.icon-achive { background: #6431f4; fill: #fff; }
 
 
 #about-p { position:absolute; top:4%; left:10%; }
