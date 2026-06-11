@@ -462,3 +462,48 @@ nav {
   display: flex;
   align-items: center;
 }
+
+
+.about-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.left-card {
+  position: absolute;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: all;
+}
+
+.float-text p{
+  font-size: 0.7em;
+  line-height: 2.3ch;
+}
+
+
+.icon-mission { background: #0052fe; }
+.icon-mission svg path { fill: #fff; }
+
+.icon-qe { background: #17c67d; }
+.icon-qe svg path { fill: #fff; }
+
+.icon-community { background: #6431f6; }
+.icon-community svg path { fill: #fff; }
+
+.icon-vision { background: #0051ff; }
+.icon-vision svg path { fill: #fff; }
+/* Card positions */
+#card-mission { top: 5%; left: 20%; right: 45%;}
+#card-qe  { top: 23%;  left: 65%;}
+#card-community { bottom:12%; left: 2%; right: 63%;  }
+#card-vision  {bottom: 0%; left: 40%; right: 8%; }
