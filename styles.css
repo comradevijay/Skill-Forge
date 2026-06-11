@@ -451,8 +451,8 @@ nav {
 
 
 #about{
-  background-image: url(img/about-img.png);
-  /* background-image: url(img/about.png); */
+  /* background-image: url(img/about-img.png); */
+  background-image: url(img/about.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -468,7 +468,7 @@ nav {
   position: absolute;
   left: 0;
   top: 0;
-  width: 55%;
+  width: 45%;
   height: 100%;
   pointer-events: none;
 }
@@ -486,7 +486,7 @@ nav {
 }
 
 .float-text p{
-  font-size: 0.7em;
+  font-size: 0.6em;
   line-height: 2.3ch;
 }
 
@@ -502,8 +502,58 @@ nav {
 
 .icon-vision { background: #0051ff; }
 .icon-vision svg path { fill: #fff; }
+
 /* Card positions */
-#card-mission { top: 5%; left: 20%; right: 45%;}
-#card-qe  { top: 23%;  left: 65%;}
-#card-community { bottom:12%; left: 2%; right: 63%;  }
-#card-vision  {bottom: 0%; left: 40%; right: 8%; }
+#card-mission { top: 5%; left: 20%; right: 41%;}
+#card-qe  { top: 23%;  left: 60%;}
+#card-community { bottom:12%; left: 2%; right: 60%;  }
+#card-vision  {bottom: 0%; left: 40%; right: 2%; }
+
+
+.about-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+
+  /* display: flex;
+  justify-content: center; 
+  align-items: center;      */
+
+}
+
+#about-h{
+  font-size: 2em;
+  margin: 0;
+}
+
+.hero-p{
+  margin: 0;
+  margin-top: 1em;
+}
+
+.float-text .card-p{
+  font-size: 80%;
+}
+
+.icon-demand { background: #0154f8; }
+.icon-demand svg path { fill: #fff; }
+
+.icon-learning { background: #17c47d; }
+.icon-learning svg path { fill: #fff; }
+
+.icon-achive { background: #6431f4; }
+.icon-achive svg path { fill: #fff; }
+
+
+#about-p { position:absolute; top:4%; left:10%; }
+.about-text{ position: absolute; top: 10%; left: 10%;}
+
+/* Card positions */
+#card-demand { bottom: 38%;   left: 10%; right: 20%;}
+#card-learning  { bottom: 21%;   left: 10%; right: 20%;}
+#card-achive { bottom:4%; left: 10%; right: 20%  }
+
+
+
