@@ -90,7 +90,8 @@ nav {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background-color: #ffffff;
   color: #555;
   font-family: Lato, sans-serif;
@@ -142,7 +143,7 @@ nav {
   width: 7rem;
 }
 
-.nav-ul li a{
+.nav-ul li a {
   padding: 0.5em;
   border-radius: 0.5em;
   text-decoration: none;
@@ -150,8 +151,7 @@ nav {
   border: 1px solid transparent;
 }
 
-
-#login{
+#login {
   padding: 0.5em;
   border-radius: 0.5em;
   color: #ffffff;
@@ -160,12 +160,11 @@ nav {
   border: 1px solid transparent;
 }
 
-
-.nav-ul li a:hover, #login:hover {
+.nav-ul li a:hover,
+#login:hover {
   background: rgba(255, 255, 255, 0.12);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  
 }
 
 #login:hover {
@@ -173,7 +172,7 @@ nav {
 }
 
 #hero {
-  background-image: url(img/hero.png);
+  background-image: url(../img/bgimgs/hero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -215,7 +214,8 @@ nav {
   color: #0151e6;
 }
 
-.hero-p, #btn {
+.hero-p,
+#btn {
   margin-left: 3em;
 }
 
@@ -247,17 +247,15 @@ nav {
   display: inline;
   height: 1.8vh;
   margin-left: 0.5em;
-
 }
 
-#btn-fill svg{
+#btn-fill svg {
   fill: #ffffff;
 }
 
-#btn-out svg{
+#btn-out svg {
   fill: #0151e6;
 }
-
 
 #btn-fill:hover {
   cursor: pointer;
@@ -322,9 +320,18 @@ nav {
   flex-shrink: 0;
 }
 
-#cap      { background-color: #e1ebfd; fill: #004ddc; }
-#partners { background-color: #ddf4e6; fill: #27af55; }
-#star     { background-color: #fcf3db; fill: #fcb601; }
+#cap {
+  background-color: #e1ebfd;
+  fill: #004ddc;
+}
+#partners {
+  background-color: #ddf4e6;
+  fill: #27af55;
+}
+#star {
+  background-color: #fcf3db;
+  fill: #fcb601;
+}
 
 .stat-number {
   font-size: 1.1rem;
@@ -354,7 +361,7 @@ nav {
   background: #fff;
   border-radius: 12px;
   padding: 10px 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -362,10 +369,22 @@ nav {
 }
 
 /* Card positions */
-#card-video { top: 10%;    right: 45%; }
-#card-code  { top: 23%;   left: 16%;   }
-#card-hands { bottom:40%; left: 12%;  }
-#card-cert  { bottom: 38%; right: 2%; }
+#card-video {
+  top: 10%;
+  right: 45%;
+}
+#card-code {
+  top: 23%;
+  left: 16%;
+}
+#card-hands {
+  bottom: 40%;
+  left: 12%;
+}
+#card-cert {
+  bottom: 38%;
+  right: 2%;
+}
 
 /* Icon circles */
 .float-icon {
@@ -383,9 +402,18 @@ nav {
   height: 20px;
 }
 
-.icon-blue   { background: #dce8fb; fill: #0151e6; }
-.icon-green  { background: #d4f0e0; fill: #22c55e;}
-.icon-purple { background: #ede9fe; fill: #9333ea;}
+.icon-blue {
+  background: #dce8fb;
+  fill: #0151e6;
+}
+.icon-green {
+  background: #d4f0e0;
+  fill: #22c55e;
+}
+.icon-purple {
+  background: #ede9fe;
+  fill: #9333ea;
+}
 
 .float-text {
   display: flex;
@@ -426,9 +454,15 @@ nav {
   border-radius: 50%;
 }
 
-.dot.red      { background: #ff5f57; }
-.dot.yellow   { background: #febc2e; }
-.dot.green-dot { background: #28c840; }
+.dot.red {
+  background: #ff5f57;
+}
+.dot.yellow {
+  background: #febc2e;
+}
+.dot.green-dot {
+  background: #28c840;
+}
 
 .code-block pre {
   margin: 0;
@@ -438,25 +472,25 @@ nav {
   line-height: 1.6;
 }
 
-.fn { color: #cba6f7; }
+.fn {
+  color: #cba6f7;
+}
 
-#card-code{
+#card-code {
   padding: 0;
 }
 
-
-#about{
-  background-image: url(img/about.png);
+#about {
+  background-image: url(../img/bgimgs/about.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 91vh;
+  height: 95vh;
   position: relative;
   display: flex;
   align-items: center;
 }
-
 
 .about-left {
   position: absolute;
@@ -472,30 +506,55 @@ nav {
   background: #fff;
   border-radius: 12px;
   padding: 10px 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   gap: 12px;
   pointer-events: all;
 }
 
-.float-text p{
+.float-text p {
   font-size: 0.6em;
   line-height: 2.3ch;
 }
 
-
-.icon-mission { background: #0052fe; fill: #fff; }
-.icon-qe { background: #17c67d; fill: #fff; }
-.icon-community { background: #6431f6; fill: #fff; }
-.icon-vision { background: #0051ff; fill: #fff; }
+.icon-mission {
+  background: #0052fe;
+  fill: #fff;
+}
+.icon-qe {
+  background: #17c67d;
+  fill: #fff;
+}
+.icon-community {
+  background: #6431f6;
+  fill: #fff;
+}
+.icon-vision {
+  background: #0051ff;
+  fill: #fff;
+}
 
 /* Card positions */
-#card-mission { top: 5%; left: 20%; right: 41%;}
-#card-qe  { top: 23%;  left: 60%;}
-#card-community { bottom:12%; left: 2%; right: 60%;  }
-#card-vision  {bottom: 0%; left: 40%; right: 2%; }
-
+#card-mission {
+  top: 5%;
+  left: 20%;
+  right: 41%;
+}
+#card-qe {
+  top: 23%;
+  left: 60%;
+}
+#card-community {
+  bottom: 15%;
+  left: 2%;
+  right: 60%;
+}
+#card-vision {
+  bottom: 2%;
+  left: 40%;
+  right: 2%;
+}
 
 .about-right {
   position: absolute;
@@ -503,35 +562,286 @@ nav {
   top: 0;
   width: 55%;
   height: 100%;
-
 }
 
-#about-h{
+#about-h {
   font-size: 2em;
   margin: 0;
 }
 
-.hero-p{
-  margin: 0;
-  margin-top: 1em;
-}
-
-.float-text .card-p{
+.float-text .card-p {
   font-size: 80%;
 }
 
-.icon-demand { background: #0154f8; fill: #fff; }
-.icon-learning { background: #17c47d; fill: #fff; }
-.icon-achive { background: #6431f4; fill: #fff; }
+.icon-demand {
+  background: #0154f8;
+  fill: #fff;
+}
+.icon-learning {
+  background: #17c47d;
+  fill: #fff;
+}
+.icon-achive {
+  background: #6431f4;
+  fill: #fff;
+}
 
+#about-p {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
 
-#about-p { position:absolute; top:4%; left:10%; }
-.about-text{ position: absolute; top: 10%; left: 10%;}
+.about-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
 
 /* Card positions */
-#card-demand { bottom: 38%;   left: 10%; right: 20%;}
-#card-learning  { bottom: 21%;   left: 10%; right: 20%;}
-#card-achive { bottom:4%; left: 10%; right: 20%  }
+#card-demand {
+  bottom: 38%;
+  left: 10%;
+  right: 20%;
+}
+#card-learning {
+  bottom: 21%;
+  left: 10%;
+  right: 20%;
+}
+#card-achive {
+  bottom: 4%;
+  left: 10%;
+  right: 20%;
+}
+
+
+.courses-section {
+  padding: 60px 40px;
+  background: #f0f4ff;
+  font-family: sans-serif;
+}
+.courses-label {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a56db;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.courses-underline {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 20px;
+}
+.courses-underline span:first-child {
+  width: 40px;
+  height: 3px;
+  background: #1a56db;
+  border-radius: 2px 0 0 2px;
+}
+.courses-underline span:last-child {
+  width: 60px;
+  height: 3px;
+  background: #c7d9f9;
+  border-radius: 0 2px 2px 0;
+}
+.courses-heading {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 14px;
+}
+.courses-heading span {
+  color: #1a56db;
+}
+.courses-sub {
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.filter-btn {
+  padding: 9px 20px;
+  border-radius: 30px;
+  border: 1.5px solid #dde5f4;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: #1a56db;
+  color: #fff;
+  border-color: #1a56db;
+}
+.filter-btn svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+.course-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e8effd;
+  transition: box-shadow 0.2s;
+}
+.course-card:hover {
+  box-shadow: 0 8px 30px rgba(26, 86, 219, 0.1);
+}
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.card-icon svg {
+  width: 32px;
+  height: 32px;
+}
+.icon-blue {
+  background: #e8f0fe;
+}
+.icon-green {
+  background: #e6f4ea;
+}
+.icon-purple {
+  background: #ede7f6;
+}
+.icon-sky {
+  background: #e1f5fe;
+}
+.icon-pink {
+  background: #fce4ec;
+}
+.icon-teal {
+  background: #e0f2f1;
+}
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+.card-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 10px;
+  margin-bottom: 18px;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #444;
+}
+.feature-item svg {
+  width: 16px;
+  height: 16px;
+  fill: #1a56db;
+  flex-shrink: 0;
+}
+.card-meta {
+  display: flex;
+  gap: 18px;
+  font-size: 12.5px;
+  color: #666;
+  margin-bottom: 14px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 14px;
+}
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.meta-item svg {
+  width: 14px;
+  height: 14px;
+  fill: #888;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stars {
+  color: #f59e0b;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.rating-text {
+  font-size: 12px;
+  color: #888;
+  margin-left: 4px;
+}
+.enroll-btn {
+  padding: 9px 20px;
+  background: #1a56db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.enroll-btn:hover {
+  background: #1447c0;
+}
+.view-all {
+  text-align: center;
+}
+.view-all-btn {
+  padding: 12px 28px;
+  border: 1.5px solid #1a56db;
+  border-radius: 30px;
+  background: #fff;
+  color: #1a56db;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+.view-all-btn:hover {
+  background: #1a56db;
+  color: #fff;
+}
 
 
 
+
+/* @media(max-width:800px){.course-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.course-grid{grid-template-columns:1fr}.courses-heading{font-size:26px}} */
