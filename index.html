@@ -7,6 +7,7 @@
   <title>SkillForge — Online Learning Platform</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 
@@ -22,7 +23,10 @@
           <li><a href="#companies">Hiring Partners</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
       <a id="login" href="#login">Login</a>
     </nav>
   </header>
@@ -309,7 +313,7 @@
   </section>
 
   <!-- Cources Section -->
-  <section class="courses-section">
+  <section id="courses" class="courses-section">
     <p class="courses-label">Our Courses</p>
     <div class="courses-underline"><span></span><span></span></div>
     <h2 class="courses-heading">Explore Our <span>Popular Courses</span></h2>
@@ -696,10 +700,406 @@
     </div>
   </section>
 
+  <!-- Hiring Partners Section -->
+  <section id="companies" class="partners-section">
+    <p class="partners-label">Our Hiring Partners</p>
+    <div class="partners-underline"><span></span></div>
+    <h2 class="partners-heading">Trusted By <span>Top Companies</span></h2>
+    <p class="partners-sub">Our learners are placed at leading companies<br>across the globe.</p>
+
+    <div class="partners-grid">
+      <div class="partner-card"><span class="logo-text" style="color:#4285F4">Google</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#5E5E5E">Microsoft</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#FF9900;font-style:italic">amazon</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#003366">TATA</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#007CC3">Infosys</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#341858">wipro</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#A100FF">accenture</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#1B3A6B">Cognizant</span></div>
+
+      <div class="partner-card"><span class="logo-text" style="color:#0070AD">Capgemini</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#000000">Deloitte.</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#006699">IBM</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#F7941E">L&T Infotech</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#E4002B">Tech Mahindra</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#0073C6">HCL</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#F80000">ORACLE</span></div>
+      <div class="partner-card"><span class="logo-text"
+          style="color:#0FAAFF;background:#003366;padding:4px 10px;border-radius:4px">SAP</span></div>
+
+      <div class="partner-card"><span class="logo-text" style="color:#FF0000">Adobe</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#00A1E0">salesforce</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#007DB8">DELL</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#0071C5">intel</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#293E40">servicenow</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#000000;font-family:serif">JPMorgan</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#1BA0D7">CISCO</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#FF7900;font-style:italic">pwc</span></div>
+
+      <div class="partner-card"><span class="logo-text" style="color:#3DCD58">Schneider Electric</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#E23744;font-style:italic">zomato</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#00457C">PayPal</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#54177D">BYJU'S</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#5F259F">PhonePe</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#2874F0">Flipkart</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#000000">OLA</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#F50057">Myntra</span></div>
+
+      <div class="partner-card"><span class="logo-text" style="color:#003D6A">LTIMindtree</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#000000">CRED</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#00D09C">Groww</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#E5007E">MEESHO</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#00C566">DUNZO</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#E1251B">upGrad</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#008FD3">RingCentral</span></div>
+      <div class="partner-card"><span class="logo-text" style="color:#0073E6">zscaler</span></div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-icon icon-blue-bg">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40-160 0 0-40c0-4.4 3.6-8 8-8zm-56 8l0 40-64 0c-35.3 0-64 28.7-64 64l0 96 512 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128zM272 256a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+          </svg>
+        </div>
+        <div class="stat-text"><strong>500+</strong><span>Hiring Partners</span></div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon icon-green-bg">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z" />
+          </svg>
+        </div>
+        <div class="stat-text"><strong>15,000+</strong><span>Learners Placed</span></div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon icon-purple-bg">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M32 32c17.7 0 32 14.3 32 32l0 336c0 8.8 7.2 16 16 16l400 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L80 480c-44.2 0-80-35.8-80-80L0 64C0 46.3 14.3 32 32 32zm160 96c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32zM352 96c17.7 0 32 14.3 32 32l0 192c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-192c0-17.7 14.3-32 32-32zM480 192c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32z" />
+          </svg>
+        </div>
+        <div class="stat-text"><strong>95%</strong><span>Placement Rate</span></div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon icon-orange-bg">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 0c17 47.9 26.7 99.9 26.7 154.3C282.7 261.3 256 256 256 256s-26.7 5.3-26.7-101.7C229.3 99.9 239 47.9 256 0zM256 512c-17-47.9-26.7-99.9-26.7-154.3C229.3 250.7 256 256 256 256s26.7-5.3 26.7 101.7c0 54.4-9.7 106.4-26.7 154.3zM0 256c47.9-17 99.9-26.7 154.3-26.7C261.3 229.3 256 256 256 256s5.3 26.7-101.7 26.7C99.9 282.7 47.9 273 0 256zM512 256c-47.9 17-99.9 26.7-154.3 26.7C250.7 282.7 256 256 256 256s-5.3-26.7 101.7-26.7c54.4 0 106.4 9.7 154.3 26.7zM256 256a256 256 0 1 0 0-512 256 256 0 1 0 0 512z"
+              opacity="0" />
+            <circle cx="256" cy="256" r="240" fill="none" stroke="currentColor" stroke-width="32" />
+            <path
+              d="M256 80a176 176 0 1 0 0 352 176 176 0 1 0 0-352zm0 32c8 32 12 75 12 144s-4 112-12 144M256 112c-8 32-12 75-12 144s4 112 12 144M104 256l304 0M256 112c50 0 96 64 96 144s-46 144-96 144M256 112c-50 0-96 64-96 144s46 144 96 144" />
+          </svg>
+        </div>
+        <div class="stat-text"><strong>25+</strong><span>Countries</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-decor"></div>
+
+    <div class="contact-container">
+      <!-- Left Side -->
+      <div class="contact-left">
+        <p class="contact-label">Contact Us</p>
+        <div class="contact-underline"></div>
+        <h2 class="contact-heading">We'd Love To<br><span>Hear From</span> You!</h2>
+        <p class="contact-sub">Have questions about our courses, partnerships, or platform? Our team is here to help you
+          every step of the way.</p>
+
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+              </svg>
+            </div>
+            <div class="info-text">
+              <h4>Email Us</h4>
+              <p>support@skillforge.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-88-37.5c-16.3-7.4-35.5-2.1-46.4 12.7l-26.1 35.7c-39.6-18.3-72.3-51-90.6-90.6l35.7-26.1c14.7-10.8 20-29.9 12.7-46.4L164.9 24.6z" />
+              </svg>
+            </div>
+            <div class="info-text">
+              <h4>Call Us</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 384 512">
+                <path
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256a64 64 0 1 1 0-128 64 64 0 1 1 0 128z" />
+              </svg>
+            </div>
+            <div class="info-text">
+              <h4>Visit Us</h4>
+              <p>123, Tech Park, Sector 62,<br>Noida, Uttar Pradesh - 201309</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+              </svg>
+            </div>
+            <div class="info-text">
+              <h4>Working Hours</h4>
+              <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Form -->
+      <div class="contact-right">
+        <div class="form-header">
+          <div class="form-icon">
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L259.1 416.4l-86.5 92.7c-4 4.3-9.6 6.9-15.5 6.9c-12.3 0-22.3-10-22.3-22.3l0-104.1L424.3 102.4c4.2-3.9-1.7-10.5-6.5-7.1L155.4 282.3 41.3 244.9c-15.4-5.1-25.4-19.9-24.7-36.2s12.7-30.1 28.5-33.9L457.9 1.4c12.1-2.9 24.7 1.3 32.7 9.9c.5 .5 1 1 1.4 1.6c2.1 2.7 3.7 5.6 4.8 8.7c.5 1.3 .9 2.6 1.2 4z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Send Us A Message</h3>
+            <p>Fill out the form and our team will get back to you as soon as possible.</p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="send-btn">
+            Send Message
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L259.1 416.4l-86.5 92.7c-4 4.3-9.6 6.9-15.5 6.9c-12.3 0-22.3-10-22.3-22.3l0-104.1L424.3 102.4c4.2-3.9-1.7-10.5-6.5-7.1L155.4 282.3 41.3 244.9c-15.4-5.1-25.4-19.9-24.7-36.2s12.7-30.1 28.5-33.9L457.9 1.4c12.1-2.9 24.7 1.3 32.7 9.9c.5 .5 1 1 1.4 1.6c2.1 2.7 3.7 5.6 4.8 8.7c.5 1.3 .9 2.6 1.2 4z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Features Bar -->
+    <div class="features-bar">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 80c-97.2 0-176 78.8-176 176l0 32-16 0c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-96c0-70.7 57.3-128 128-128s128 57.3 128 128l0 96c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-16 0 0-32c0-97.2-78.8-176-176-176zM416 304l0 96c0 26.5-21.5 48-48 48l-48 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l48 0c8.8 0 16-7.2 16-16l0-96 32 0z" />
+          </svg>
+        </div>
+        <div>
+          <h4>Quick Response</h4>
+          <p>We reply within 24 hours</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 95.7-39.3 270.7-200.9 349.4c-23 11.1-49.9 11.1-72.9 0C60.6 410.8 21.8 235.8 21.3 140.1c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zM352 224c0-53-43-96-96-96s-96 43-96 96s43 96 96 96s96-43 96-96zm-96 32a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"
+              opacity="0" />
+            <path
+              d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 95.7-39.3 270.7-200.9 349.4c-23 11.1-49.9 11.1-72.9 0C60.6 410.8 21.8 235.8 21.3 140.1c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zM369 161L241 289c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 127c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
+        <div>
+          <h4>Trusted Support</h4>
+          <p>Friendly &amp; professional team</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 95.7-39.3 270.7-200.9 349.4c-23 11.1-49.9 11.1-72.9 0C60.6 410.8 21.8 235.8 21.3 140.1c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zM369 161L241 289c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 127c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
+        <div>
+          <h4>100% Assistance</h4>
+          <p>We are here to help you</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z" />
+          </svg>
+        </div>
+        <div>
+          <h4>Long-term Support</h4>
+          <p>Support beyond learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 512 512" class="logo-icon">
+            <path
+              d="M256 32L0 160l256 128 256-128L256 32zM48 224v96c0 8.8 7.2 16 16 16h32V224H48zm400 0v160c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V224h-32v128c0 35.3 28.7 64 64 64h192c35.3 0 64-28.7 64-64V224h-32z" />
+          </svg>
+          <span class="logo-text">Skill<span class="logo-accent">Forge</span></span>
+        </div>
+        <p class="logo-sub">ONLINE LEARNING PLATFORM</p>
+        <p class="footer-desc">Empowering learners with industry-relevant skills through expert-led courses and
+          real-world projects.</p>
+
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 320 512">
+              <path
+                d="M279.14 288l14.22-92.66h-88.91v-59.81c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 16.3 2.4 31 2.4 47.8-1.9-48.1-9.7-84.1-51.9-84.1-102.9v-1.3c14 7.8 30.3 12.6 47.4 13.3-28.3-18.9-46.8-51.1-46.8-87.6 0-19.6 5.2-37.5 14.3-53.1 51.4 63.4 128.4 104.9 215.4 109.1-12.9-62.4 33.6-113 89.6-113 26.4 0 50.1 11.1 66.8 28.9 20.7-3.9 40.1-11.4 57.6-21.7-6.8 21.1-21.1 38.9-39.8 50.1 18.3-1.9 35.8-6.8 52-13.9-12.1 18.3-27.7 34.2-45.4 47.1z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 448 512">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zm-46.44-340a53.49 53.49 0 1 1 0-106.97 53.49 53.49 0 0 1 0 106.97zM447.9 448h-92.68V302.4c0-34.7-12.4-58.4-43.4-58.4-23.7 0-37.8 16-44 31.4-2.3 5.5-2.9 13.2-2.9 21v151.6h-92.7s1.3-245.8 0-271.1h92.7v38.4c-.2.3-.5.7-.7 1h.7v-1c12.3-19 34.4-46.1 83.7-46.1 61.1 0 106.9 39.9 106.9 125.6V448z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 576 512">
+              <path
+                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C16 167 16 256 16 256s0 89 10.3 131.9c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-12.3c23.5-6.3 42-24.2 48.3-47.8C560 345 560 256 560 256s0-89-10.3-131.9zM232 338V174l142 82-142 82z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 448 512">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Hiring Partners</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Courses -->
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Data Science</a></li>
+          <li><a href="#">Cloud Computing</a></li>
+          <li><a href="#">Artificial Intelligence</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">View All Courses</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Learning Paths</a></li>
+          <li><a href="#">Certificates</a></li>
+          <li><a href="#">Career Guide</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col contact-col">
+        <h4>Contact Info</h4>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 384 512" class="contact-icon">
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256a64 64 0 1 1 0-128 64 64 0 1 1 0 128z" />
+            </svg>
+            <span>123, Tech Park, Sector 62, Noida, Uttar Pradesh - 201309</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 512 512" class="contact-icon">
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>
+            <span>support@skillforge.com</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 512 512" class="contact-icon">
+              <path
+                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-88-37.5c-16.3-7.4-35.5-2.1-46.4 12.7l-26.1 35.7c-39.6-18.3-72.3-51-90.6-90.6l35.7-26.1c14.7-10.8 20-29.9 12.7-46.4L164.9 24.6z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 512 512" class="contact-icon">
+              <path
+                d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+            </svg>
+            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p class="copyright">&copy; <span id="year"></span> SkillForge. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <span class="divider">|</span>
+        <a href="#">Terms & Conditions</a>
+        <span class="divider">|</span>
+        <a href="#">Refund Policy</a>
+      </div>
+      <p class="made-with">Made with <span class="heart">💙</span> for learners around the world.</p>
+    </div>
+  </footer>
 
 
-
-<script type="module" src="script.js"></script>
+  <script type="module" src="script.js"></script>
 
 </body>
 
