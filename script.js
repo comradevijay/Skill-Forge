@@ -7,7 +7,6 @@ if (navToggle && navUl) {
     navUl.classList.toggle('open');
   });
 
-  // Close nav when a link is clicked (smooth scroll to section)
   navUl.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navUl.classList.remove('open');
@@ -22,7 +21,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
   });
 });
 
-// Optional: scroll-reveal animation for partner cards
 document.addEventListener('DOMContentLoaded', () => {
   const cards = document.querySelectorAll('.partner-card');
   const observer = new IntersectionObserver((entries) => {
@@ -64,12 +62,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     return;
   }
 
-  // Replace this with your actual submission logic (API call, etc.)
   console.log('Form submitted:', { name, email, subject, message });
   alert('Thank you! Your message has been sent.');
   this.reset();
 });
 
 
-// Auto-update copyright year
 document.getElementById('year').textContent = new Date().getFullYear();
