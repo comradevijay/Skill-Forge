@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Offset anchor targets so the fixed navbar doesn't overlap the section */
 section[id],
 .courses-section,
 .partners-section,
@@ -35,7 +34,6 @@ section[id],
 /* Mobile nav drawer — slides in from top */
 @media (max-width: 768px) {
 
-  /* One solid row: logo | [Login] [☰] */
   .custom-nav {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +44,6 @@ section[id],
     gap: 0;
   }
 
-  /* Logo side — grows to push controls right */
   .nav-left {
     flex: 1;
     justify-content: flex-start;
@@ -54,7 +51,6 @@ section[id],
     width: auto;
   }
 
-  /* Login + hamburger sit on the same row, right-aligned */
   .nav-right-controls {
     display: flex;
     align-items: center;
@@ -62,12 +58,10 @@ section[id],
     padding: 0.55em 0;
   }
 
-  /* Show hamburger */
   .nav-toggle {
     display: flex;
   }
 
-  /* Login button — compact, stays in top bar */
   #login {
     padding: 0.38em 0.9em;
     font-size: 13px;
@@ -75,7 +69,6 @@ section[id],
     border-radius: 6px;
   }
 
-  /* Dropdown: nav links only, full width below the top bar */
   .nav-ul {
     display: none;
     flex-direction: column;
@@ -418,7 +411,6 @@ section[id],
   .footer-top {
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
   }
-  /* hide 5th contact-info col on mid screens — it stacks with the rest */
   .footer-top .contact-col {
     grid-column: 1 / -1;
     display: grid;

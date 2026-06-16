@@ -1,89 +1,3 @@
-@import "tailwindcss";
-
-/* {
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  background-color: #ffffff;
-  color: #555;
-  font-family: Lato, sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
-}
-
-header {
-  height: 9vh;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-  width: 100%;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  position: fixed;
-  height: 9vh;
-  z-index: 9999;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.nav-ul {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  margin-left: 7em;
-  color: #ffffff;
-  list-style: none;
-}
-
-.logo {
-  height: 3rem;
-  width: 7rem;
-}
-
-.nav-ul li a {
-  padding: 0.5em;
-  border-radius: 0.5em;
-}
-
-.login {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  gap: 2em;
-  list-style: none;
-}
-
-.login a {
-  padding: 0.5em;
-  border-radius: 0.5em;
-}
-
-.nav-ul li a:hover {
-  background-color: #b6cef3;
-}
-
-
-.login a:hover {
-  padding: 0.5em;
-  background-color: #0d6efd;
-}
-
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -839,10 +753,6 @@ nav {
   background: #1a56db;
   color: #fff;
 }
-
-
-
-
 
 
 .partners-section{padding:60px 40px;background:#eef2ff;font-family:sans-serif;position:relative;overflow:hidden}
